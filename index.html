@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="tictactoe.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="index.html">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <div class="game-area"></div>
+        <h1>Welcome to the game Tic-Tac-Toe!</h1>
+        <p>Iclicking the Start Game button will create a 3x3 board,
+            <br> 
+            clicking the cells will mark them with X and O.
+        </p>
+        <input type="submit" onclick="generateGame()" value="Start New Game">
+        <input type="submit" onclick="reset()" value="Restart score">
+        <input type="checkbox" onclick="compTrue()" name="Play with computer" value="Play with computer">
+        <label> play with computer </label>
+        
+        <div id="game-board" class="game-board"></div>
+    <div score>
+        <h4> X score is- <span id ="Xscore">0</span> </h4> 
+    <br>
+    </br>
+        <h4> O score is- <span id ="Oscore">0</span> </h4> 
+    </div>
+
+    </center>
+</body>
+<script src="tictactoe.js"></script>
+</html>
